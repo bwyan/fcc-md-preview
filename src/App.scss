@@ -1,29 +1,20 @@
 .App {
-  &-header {
-    background-color: #222;
-    height: 180px;
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-
-  &-intro {
-    font-size: large;
-  }
+  text-align: center;
 }
 
-.configs {
-  li {
-    margin: 15px 0px;
-  }
+.preview {
+  border: 1px solid black;
+  width: 50vw;
+  height: 100vh;
+  float: right;
 }
 
-code {
-  border-radius: 3px;
-  padding: 2px 10px;
-  font-size: 17px;
-  margin-right: 10px;
-  background-color: rgba(222, 222, 222, 0.34);
-  border: 1px solid #cccccc;
-  color: #868686;
+textarea {
+  margin: 0 10px 0 0;
+  width: 48vw;
+  height: 100vh;
+  float: left;
+  font-size: 13pt;
+  font-family: SF Mono, Hack, monospace;
+  resize: none;
 }

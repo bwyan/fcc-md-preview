@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
+import TextInput from './TextInput';
+import Preview from './Preview';
 
-//styles
-import './App.less';
-import styles from './Modules.css';
+import './App.scss';
 
 class App extends Component {
   render() {
     return (
-      
+      <div className="App">
+        <TextInput />
+        <Preview />
+      </div>
     )
   }
 }
