@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import TextInput from './TextInput';
 import Preview from './Preview';
 
-import './App.css';
+import './App.scss';
 
 class App extends Component {
   constructor() {
