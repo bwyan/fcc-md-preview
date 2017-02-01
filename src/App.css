@@ -1,0 +1,19 @@
+.preview {
+  width: 48vw;
+  min-height: 100vh;
+  float: right;
+  text-align: left;
+  border-left: 1px solid black;
+  border: 1px dotted orange;
+}
+
+textarea {
+  width: 48vw;
+  min-height: 100vh;
+  float: left;
+  font-size: 10pt;
+  font-family: SF Mono, Hack, monospace;
+  resize: none;
+  border: 1px dotted orange;
+  padding: 10px 10px 0 10px;
+}
