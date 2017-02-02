@@ -1,11 +1,15 @@
 
 $mono-font-stack: Monaco, monospace;
 $sans-font-stack: -apple-system, Helvetica Neue, sans-serif;
+$serif-font-stack: "Lucida Bright", Georgia, serif;
 
 $primary-color: #333;
+$accent-color: #1F7A8C;
 
-$light-grey: #ccc;
+$light-grey-text: #ccc;
 $dark-grey: rgb(26, 43, 52);
+
+$light-grey-background: #dedede;
 
 body {
   font-size: 10pt;
@@ -15,12 +19,17 @@ body {
 .preview {
   float: right;
   width: 45vw;
+  max-width: 640px;
   height: 98vh;
   text-align: left;
   font: $sans-font-stack;
-  margin: 0 40px 0 40px;
+  padding: 0 40px 0 40px;
   overflow: scroll;
-  float: left;
+  float: right;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $serif-font-stack;
+  }
 
   h1 {
     font-size: 2em;
@@ -56,6 +65,7 @@ body {
   }
 
   p {
+    font-family: $sans-font-stack;
     font-size: 1em;
     margin-bottom: 0.8em;
     line-height: 1.35em;
@@ -70,12 +80,12 @@ body {
   }
 
   a {
-    color: $primary-color;
-    text-decoration: underline;
+    color: $accent-color;
+    text-decoration: none;
   }
 
   a:hover {
-    font-weight: bold;
+    text-decoration: underline;
   }
 
   ol {
@@ -88,14 +98,22 @@ body {
     line-height: 1.2em;
   }
 
+  blockquote {
+    margin: 20px;
+    padding: 20px 10px 10px 20px;
+    background-color: $light-grey-background;
+    font-size: 85%;
+  }
+
   pre {
     padding: 10px;
     margin: 10px 0 10px 0;
     background-color: $dark-grey;
-    color: $light-grey;
+    color: $light-grey-text;
     border-radius: 4px;
     white-space: pre-wrap;
   }
+
   code {
     font-family: $mono-font-stack;
     font-size: 12px;
@@ -103,15 +121,46 @@ body {
 
 }
 
+.input-container {
+
+}
+
 textarea {
   width: 44vw;
-  height: 98vh;
+  height: 100vh;
   float: left;
   font-size: 10pt;
   font-family: $mono-font-stack;
   resize: none;
-  margin: 0 0 0 10px;
+  margin: 0 auto;
   padding: 10px 10px 0 20px;
   border: none;
-  border-right: 1px solid $light-grey;
+  border-right: 1px solid $light-grey-text;
+}
+
+@media (max-width: 1100px) {
+  .input-container {
+    width: 90vw;
+    max-width: 680px;
+    border-bottom: 1px solid $light-grey-text;
+    margin: 0 auto;
+  }
+
+  form {
+    float: none;
+  }
+
+  textarea {
+    float: none;
+    margin: 0 auto;
+    width: 60vw;
+    border-right: none;
+  }
+
+  .preview {
+    float: none;
+    margin: auto;
+    width: 90vw;
+  }
+
 }

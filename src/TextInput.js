@@ -10,9 +10,11 @@ class TextInput extends React.Component {
 
 	render() {
 		return (
-			<form>
-				<textarea className="text-input" onChange={this.handleChange.bind(this)} ref={(textarea) => {this.textInput = textarea}}></textarea>
-			</form>
+			<div className="input-container">
+				<form>
+					<textarea className="text-input" onChange={this.handleChange.bind(this)} ref={(textarea) => {this.textInput = textarea}}></textarea>
+				</form>
+			</div>
 		)
 	}
 }
