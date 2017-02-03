@@ -12,7 +12,7 @@ class TextInput extends React.Component {
 		return (
 			<div className="input-container">
 				<form>
-					<textarea className="text-input" onChange={this.handleChange.bind(this)} ref={(textarea) => {this.textInput = textarea}}></textarea>
+					<textarea className="text-input" onChange={this.handleChange.bind(this)} ref={(textarea) => {this.textInput = textarea}}>{this.props.defaultMD}</textarea>
 				</form>
 			</div>
 		)

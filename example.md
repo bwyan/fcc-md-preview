@@ -1,8 +1,8 @@
-Markdown: Basics
+Bwyan's Markdown Previwer
 ================
 
-Getting the Gist of Markdown's Formatting Syntax
-------------------------------------------------
+A React.js Project for Free Code Camp 
+-------------------------------------
 
 This page offers a brief overview of what it's like to use Markdown. Markdown should be very easy to pick up simply by
 looking at a few examples of it in action.
@@ -113,16 +113,7 @@ Image syntax is very much like link syntax.
 
 Inline (titles are optional):
 
-![alt text](/path/to/img.jpg "Title")
-
-Reference-style:
-
-![alt text][id]
-
-[id]: /path/to/img.jpg "Title"
-
-Both of the above examples produce the same output
-
+![Screenshot of Free Code Camp Calculator](https://github.com/bwyan/fcc-assets/blob/master/portfolio/fcc-calc@2x.png?raw=true "My Free Code Camp Calculator")
 
 ### Code ###
 
@@ -147,3 +138,4 @@ and `>` characters will be escaped automatically.
         &lt;p&gt;For example.&lt;/p&gt;
     &lt;/blockquote&gt;
     </code></pre>
+

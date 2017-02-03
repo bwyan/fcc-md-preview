@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TextInput from './TextInput';
 import Preview from './Preview';
+import str from './defaultMD.js'
 
 import './App.scss';
 
@@ -11,7 +12,7 @@ class App extends Component {
   	this.updateInput = this.updateInput.bind(this);
 
   	this.state = {
-  		markdown: '',
+  		markdown: str,
   	}
   }
 
@@ -22,7 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <TextInput updateInput={this.updateInput}/>
+        <TextInput updateInput={this.updateInput} defaultMD={str}/>
         <Preview updateInput={this.updateInput} markdown={this.state.markdown}/>
       </div>
     )
